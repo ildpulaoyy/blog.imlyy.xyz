@@ -46,8 +46,6 @@
     <link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
 
     
-        <script src="/js/valine/index.js"></script>
-    
     
     <!-- 依赖于jquery和vue -->
     <script src="https://unpkg.com/jquery@3.5.1/dist/jquery.min.js"></script>
@@ -76,19 +74,6 @@
   
   <!-- 预加载动画 -->
   
-  
-  <div class="preloader_2" id="loader">
-  <div class="loader"></div>
-</div>
-
-  <script>
-    var endLoading = function () {
-      document.body.style.overflow = 'auto';
-      document.getElementById('loader').classList.add("loaded");
-    }
-    window.addEventListener('DOMContentLoaded', endLoading);
-  </script>
-
 
   <body>
     <!-- 判断是否为暗黑风格 -->
@@ -251,25 +236,9 @@
               
                 <a href="/friends" class="drawer-menu-item-link">
                   
+                    <i class="fas fa-link" aria-hidden="true"></i>
+                  
                   <span class="name">友情链接</span>
-                </a>
-              
-            </li>
-          
-            <li class="drawer-box-content_item" style="position: relative;">
-              
-                <a href="/" class="drawer-menu-item-link">
-                  
-                  <span class="name">icon</span>
-                </a>
-              
-            </li>
-          
-            <li class="drawer-box-content_item" style="position: relative;">
-              
-                <a href="/" class="drawer-menu-item-link">
-                  
-                  <span class="name">children</span>
                 </a>
               
             </li>
@@ -387,25 +356,9 @@
               
                 <a href="/friends" class="menu-item-link" title="友情链接">
                   
+                    <i class="fas fa-link" aria-hidden="true"></i>
+                  
                   <span class="name">友情链接</span>
-                </a>
-              
-            </li>
-          
-            <li class="menu-item" style="position: relative;">
-              
-                <a href="/" class="menu-item-link" title="icon">
-                  
-                  <span class="name">icon</span>
-                </a>
-              
-            </li>
-          
-            <li class="menu-item" style="position: relative;">
-              
-                <a href="/" class="menu-item-link" title="children">
-                  
-                  <span class="name">children</span>
                 </a>
               
             </li>
@@ -494,32 +447,6 @@
   </div>
   
   
-    <div id="he-plugin-simple"></div>
-    <script defer>
-      WIDGET = {
-        CONFIG: {
-          "modules": "012",
-          "background": 5,
-          "tmpColor": "4A4A4A",
-          "tmpSize": 16,
-          "cityColor": "4A4A4A",
-          "citySize": 16,
-          "aqiSize": 16,
-          "weatherIconSize": 24,
-          "alertIconSize": 18,
-          "padding": "10px 10px 10px 10px",
-          "shadow": "1",
-          "language": "auto",
-          "borderRadius": 5,
-          "fixed": "false",
-          "vertical": "middle",
-          "horizontal": "center",
-          "key": "2784dd3fcb1e4f0f9a9b579bf69641f2"
-        }
-      }
-    </script>
-    <script defer src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script> 
-    
 </header>
         <!-- 内容区域 -->
         
@@ -872,7 +799,7 @@
   
   <header>
     
-      <i style="color: " class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name' style="color: ">本文目录</span>
+      <i style="color: #f9e8d0" class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name' style="color: #f9e8d0">本文目录</span>
     
   </header>
 
@@ -1097,7 +1024,7 @@
 			clearInterval(this.time);
 		},
 		mounted() {
-			let prop = '' || '';
+			let prop = '' || '#a4cab6';
 			let isImg = prop.includes('.bmp') || prop.includes('.jpg') || prop.includes('.png') || prop.includes('.tif') || prop.includes('.gif') || prop.includes('.pcx') || prop.includes('.tga') || prop.includes('.exif') || prop.includes('.fpx') || prop.includes('.psd') || prop.includes('.cdr') || prop.includes('.pcd') || prop.includes('.dxf') || prop.includes('.ufo') || prop.includes('.eps') || prop.includes('.ai') || prop.includes('.raw') || prop.includes('.WMF') || prop.includes('.webp') || prop.includes('.jpeg') || prop.includes('http://') || prop.includes('https://')
 			if (isImg) {
 				let img = prop.split(',');
@@ -1463,8 +1390,6 @@
 
     
     <!-- 背景彩带 -->
-    
-      <script async type="text/javascript" size="100" alpha='0.4' zIndex="-1" src="/js/ribbon.min.js"></script>
     
 
     <script src="/js/utils/index.js"></script>

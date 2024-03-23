@@ -46,8 +46,6 @@
     <link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
 
     
-        <script src="/js/valine/index.js"></script>
-    
     
     <!-- 依赖于jquery和vue -->
     <script src="https://unpkg.com/jquery@3.5.1/dist/jquery.min.js"></script>
@@ -76,19 +74,6 @@
   
   <!-- 预加载动画 -->
   
-  
-  <div class="preloader_2" id="loader">
-  <div class="loader"></div>
-</div>
-
-  <script>
-    var endLoading = function () {
-      document.body.style.overflow = 'auto';
-      document.getElementById('loader').classList.add("loaded");
-    }
-    window.addEventListener('DOMContentLoaded', endLoading);
-  </script>
-
 
   <body>
     <!-- 判断是否为暗黑风格 -->
@@ -251,25 +236,9 @@
               
                 <a href="/friends" class="drawer-menu-item-link">
                   
+                    <i class="fas fa-link" aria-hidden="true"></i>
+                  
                   <span class="name">友情链接</span>
-                </a>
-              
-            </li>
-          
-            <li class="drawer-box-content_item" style="position: relative;">
-              
-                <a href="/" class="drawer-menu-item-link">
-                  
-                  <span class="name">icon</span>
-                </a>
-              
-            </li>
-          
-            <li class="drawer-box-content_item" style="position: relative;">
-              
-                <a href="/" class="drawer-menu-item-link">
-                  
-                  <span class="name">children</span>
                 </a>
               
             </li>
@@ -387,25 +356,9 @@
               
                 <a href="/friends" class="menu-item-link" title="友情链接">
                   
+                    <i class="fas fa-link" aria-hidden="true"></i>
+                  
                   <span class="name">友情链接</span>
-                </a>
-              
-            </li>
-          
-            <li class="menu-item" style="position: relative;">
-              
-                <a href="/" class="menu-item-link" title="icon">
-                  
-                  <span class="name">icon</span>
-                </a>
-              
-            </li>
-          
-            <li class="menu-item" style="position: relative;">
-              
-                <a href="/" class="menu-item-link" title="children">
-                  
-                  <span class="name">children</span>
                 </a>
               
             </li>
@@ -494,32 +447,6 @@
   </div>
   
   
-    <div id="he-plugin-simple"></div>
-    <script defer>
-      WIDGET = {
-        CONFIG: {
-          "modules": "012",
-          "background": 5,
-          "tmpColor": "4A4A4A",
-          "tmpSize": 16,
-          "cityColor": "4A4A4A",
-          "citySize": 16,
-          "aqiSize": 16,
-          "weatherIconSize": 24,
-          "alertIconSize": 18,
-          "padding": "10px 10px 10px 10px",
-          "shadow": "1",
-          "language": "auto",
-          "borderRadius": 5,
-          "fixed": "false",
-          "vertical": "middle",
-          "horizontal": "center",
-          "key": "2784dd3fcb1e4f0f9a9b579bf69641f2"
-        }
-      }
-    </script>
-    <script defer src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script> 
-    
 </header>
         <!-- 内容区域 -->
         
@@ -567,7 +494,7 @@
                     <div class="ani animated" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.2s" swiper-animate-delay="0.3s"><a href="tencent://AddContact/?fromId=50&amp;fromSubId=1&amp;subcmd=all&amp;uin=2425875170" class="read-more swiper-btn-color" style="display: inline-block; z-index:1;">联系我QQ</a></div>
                   
                   
-                    <div class="ani animated" style="margin-left: 10px;" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.2s" swiper-animate-delay="0.3s"><a href="https://blog.imlyy.xyz/2022/05/13/hello-page/" class="read-more swiper-btn-color2" style="display: inline-block; z-index:1;border: 1px solid white;">自我介绍</a></div>
+                    <div class="ani animated" style="margin-left: 10px;" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.2s" swiper-animate-delay="0.3s"><a href="https://blog.imlyy.xyz/about/" class="read-more swiper-btn-color2" style="display: inline-block; z-index:1;border: 1px solid white;">自我介绍</a></div>
                   
                 </div>
               </div>
@@ -1166,33 +1093,6 @@
     
 
 
-<div class="topArticle reveal">
-	<h3><i class="fas fa-thumbs-o-up" aria-hidden="true"></i>推荐文章</h3>
-	<div class="articles">
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-	</div>
-</div>
-
 
     <div class="bg-floor" id="home-bg-floor" style="position: fixed;left: 0;top: 0;width: 100%;height: 100%;z-index: -2;"></div>
     <!-- 每一篇文章卡片 -->
@@ -1678,7 +1578,7 @@
           </div>
           <div class="post-content">
             自我介绍名称：青椒我叫青椒，你可以叫我青骄，这是我第一次使用hexo创建个人博客，请多多指教！
-个人信息QQ：3305647127E-mail：&#97;&#100;&#109;&#x69;&#x6e;&#x40;&#105;&#109;&
+个人信息QQ：3305647127E-mail：&#97;&#x64;&#109;&#105;&#110;&#64;&#x69;&#109;&#
           </div>
         </div>
         <div class="post-more">
@@ -1984,7 +1884,7 @@
         <div class="webinfo-item">
           <div>最后活动时间：</div>
           
-            <div id="last-update" style="display: none;">Sat Mar 23 2024 17:06:39 GMT+0800 (中国标准时间)</div>
+            <div id="last-update" style="display: none;">Sat Mar 23 2024 18:16:17 GMT+0800 (中国标准时间)</div>
             <div id="last-update-show">2024-03-23 日</div>
           
         </div>
@@ -2348,8 +2248,6 @@
 
     
     <!-- 背景彩带 -->
-    
-      <script async type="text/javascript" size="100" alpha='0.4' zIndex="-1" src="/js/ribbon.min.js"></script>
     
 
     <script src="/js/utils/index.js"></script>
